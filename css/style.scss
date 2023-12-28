@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.heading{
+    background-color: #081b31;
+    color: white;
+    text-align: center;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+#turn{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.choices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+    .choice{
+        height: 165px;
+        width: 165px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        
+        img{
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+
+        &:hover{
+            background-color: #081b31;
+            cursor: pointer;
+        }
+    }
+}
+
+.container{
+    width: 66%;
+    margin:  0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    font-size: 2rem;
+    margin-top: 3rem;
+
+    #your-score, #comp-score{
+        font-size: 4rem;
+    }
+}
+
+.msg-box{
+    background-color: #081b31;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    width: fit-content;
+    margin: 5rem auto 0 auto;
+    border-radius: 1rem;
+    // margin-bottom: 2rem;
+}
+
+
+.comp-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+    .comp-choice{
+        height: 165px;
+        width: 165px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        
+        img{
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        &:hover{
+            cursor: not-allowed;
+        }
+    }
+}
+
+.wrapper-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    font-family: 'Indie Flower', cursive;
+    margin: 2rem;
+}
